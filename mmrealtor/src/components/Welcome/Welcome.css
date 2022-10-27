@@ -1,0 +1,8 @@
+.welcome-home {
+  background-image: url("../../assets/slideshow-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  background-attachment: fixed;
+  height: 100%;
+}
