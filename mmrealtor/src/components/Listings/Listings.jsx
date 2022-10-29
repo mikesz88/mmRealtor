@@ -30,7 +30,7 @@ function Listings() {
   }, [index]);
 
   return (
-    <div className='listings-home'>
+    <div className='listings-home component'>
       <div className='slideshow-container'>
         <div className='listing-slides'>
           <div className={`slide ${images[index]}`}>
@@ -41,7 +41,6 @@ function Listings() {
                 View Alexandre's Portfolio
               </a>
             </div>
-            
           </div>
         </div>
       </div>

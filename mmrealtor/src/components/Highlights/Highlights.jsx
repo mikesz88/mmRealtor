@@ -9,12 +9,12 @@ import media3 from '../../assets/press2.jpg'
 import report1 from '../../assets/elliman-report.pdf'
 import report2 from '../../assets/the-wealth-report-2019.pdf'
 
-const review = '“ My clients love me because I’m a winner. I bring comfort and clarity into an immensely competitive and demanding LA market. This allows for confident decisions, which in turn builds trust, relationships, and ultimately the best results. ”'
+const review = `“ My clients love me because I'm a winner. I bring comfort and clarity into an immensely competitive and demanding LA market. This allows for confident decisions, which in turn builds trust, relationships, and ultimately the best results. ”`
 
 function Listings() {
 
   return (
-    <div className='highlights'>
+    <div className='highlights component'>
       <div className="video-link">
         <img src={intro} alt="" />
       </div>
@@ -35,7 +35,7 @@ function Listings() {
       <div className='media-wrapper'>
         <h3>Media/Press</h3>
         <div className='press-media'>
-          <a href='' ><img src={media1} alt="press video" /></a>
+          <a href='www.video.com' ><img src={media1} alt="press video" /></a>
           <a href={report1} ><img src={media2} alt="Elliman Q2 2019" /></a>
           <a href={report2} ><img src={media3} alt="The Wealth Report" /></a>
         </div>

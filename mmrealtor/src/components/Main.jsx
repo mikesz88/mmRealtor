@@ -1,10 +1,11 @@
 import React from "react";
+import './Main.css'
 import Nav from "./Nav/Nav";
 import Welcome from "./Welcome/Welcome";
 import Listings from "./Listings/Listings";
 import Highlights from "./Highlights/Highlights";
-// import About from "./About/About";
-// import Connect from "./Connect/Connect";
+import About from "./About/About";
+import Connect from "./Connect/Connect";
 
 const checkoutRoutes = [
   "Welcome",
@@ -34,10 +35,15 @@ class Main extends React.Component {
           <Listings changeRoute={this.changeRoute} />}
         {checkoutRoute === "Highlights" && 
           <Highlights changeRoute={this.changeRoute} />}
-        {/* {checkoutRoute === "About" && 
+        {checkoutRoute === "About" && 
           <About changeRoute={this.changeRoute} />}
         {checkoutRoute === "Connect" && 
-          <Connect changeRoute={this.changeRoute} />} */}
+          <Connect changeRoute={this.changeRoute} />}
+          {/* <Welcome/>
+          <Listings/>
+          <Highlights/>
+          <About />
+          <Connect/> */}
       </div>
     );
   }

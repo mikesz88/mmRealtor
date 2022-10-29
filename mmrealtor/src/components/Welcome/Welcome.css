@@ -2,7 +2,7 @@
   background-image: url("../../assets/slideshow-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: right;
+  background-position: top;
   background-attachment: fixed;
   height: 100%;
 }
