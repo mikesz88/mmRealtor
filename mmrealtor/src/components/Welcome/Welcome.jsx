@@ -1,15 +1,15 @@
 import React from "react";
 import "./Welcome.css";
+import brokerLogo from '../../assets/broker-logo.webp'
 
-class Welcome extends React.Component {
-  state = {}
-
-  render() {
-    return (
-      <div className='welcome-home component'>
+const Welcome = React.forwardRef((props, ref) => {
+  return (
+    <div id="component" className='welcome active' ref={ref}>
+      <div className='brokerage'>
+        <img src={brokerLogo} alt="Brokerage" />
       </div>
-    );
-  }
-}
+    </div>
+  );
+});
 
 export default Welcome;

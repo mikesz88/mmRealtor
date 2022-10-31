@@ -9,7 +9,46 @@
   transition: all 10s ease-in 0s;
 }
 
-.main > .component {
+#component {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 25%;
+  width: 0;
+  height: 0;
+}
+
+#component.active {
+  display: block;
+  position: static;
+  height: 100%;
   width: 100%;
-  height: 100vh;
+  transition: all 0.3s ease-in-out;
+}
+
+#component.prev {
+  bottom: 0%;
+}
+
+.test-arrow {
+  background-image: url(../assets/right-arrow.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 5%;
+  right: 20%;
+  z-index: 1000;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: 2px solid white;
+}
+
+@media screen and (max-width: 990px) {
+  .header { 
+    height: 15%;
+    width: 100%;
+  }
+
+  #component.active { height: 85%; }  
 }

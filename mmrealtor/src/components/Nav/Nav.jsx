@@ -1,20 +1,20 @@
 import React from "react";
 import "./Nav.css";
-import logo from "../../assets/website-logo-a.jpg";
+import logo from "../../assets/logo-dark.png";
 
 const checkoutRoutes = [
-  "welcome",
-  "listings",
-  "highlights",
-  "about",
-  "connect",
+  "WELCOME",
+  "LISTINGS",
+  "HIGHLIGHTS",
+  "ABOUT",
+  "CONNECT",
 ];
 
 class Nav extends React.Component {
   state = {
     navOpen: false,
     matches: window.matchMedia("(min-width: 990px)").matches, 
-    position: 'WELCOME'
+    position: 'WELCOME',
   }
 
   componentDidMount() {
@@ -22,10 +22,9 @@ class Nav extends React.Component {
     window.matchMedia("(min-width: 990px)").addEventListener('change', handler);
   }
 
-
-
   render() {
     let scrollerClass = 'nav-menu-indicator pos-1';
+    let socialClass = 'socials';
     let mobileMenuClass = 'mobile-menu-btn';
     let hideNav = 'nav-menu';
     this.state.navOpen === false ? mobileMenuClass = 'mobile-menu-btn' 
@@ -46,17 +45,19 @@ class Nav extends React.Component {
       });
       e.currentTarget.classList.add('active');
       this.setState({ position: e.currentTarget.innerText})
-      const position = checkoutRoutes.indexOf(e.currentTarget.innerText.toLowerCase())
-      console.log(position);
+      const position = checkoutRoutes.indexOf(e.currentTarget.innerText)
       this.props.changeRoute(position)
+      this.setState({navOpen: false})
     }
 
-    let e = this.state.position;
-    e === 'WELCOME' ? scrollerClass = 'nav-menu-indicator pos-1'
-    : e === 'LISTINGS' ? scrollerClass = 'nav-menu-indicator pos-2'
-    : e === 'HIGHLIGHTS' ? scrollerClass = 'nav-menu-indicator pos-3'
-    : e === 'ABOUT' ? scrollerClass = 'nav-menu-indicator pos-4'
+    let e = this.props.index;
+    e === 0 ? scrollerClass = 'nav-menu-indicator pos-1'
+    : e === 1 ? scrollerClass = 'nav-menu-indicator pos-2'
+    : e === 2 ? scrollerClass = 'nav-menu-indicator pos-3'
+    : e === 3 ? scrollerClass = 'nav-menu-indicator pos-4'
     : scrollerClass = 'nav-menu-indicator pos-5'
+
+    e === 3 ? socialClass = 'socials about-page' : socialClass = 'socials';
 
     return (
       <div className='header'>
@@ -72,16 +73,16 @@ class Nav extends React.Component {
           </div>
           <div className='scroll-navigation'>
             <ul className={hideNav}>
-              <li className='nav-page active' onClick={(e) => handleClassClick(e)}>Welcome</li>
-              <li className='nav-page' onClick={(e) => handleClassClick(e)}>Listings</li>
-              <li className='nav-page' onClick={(e) => handleClassClick(e)}>Highlights</li>
-              <li className='nav-page' onClick={(e) => handleClassClick(e)}>About</li>
-              <li className='nav-page' onClick={(e) => handleClassClick(e)}>Connect</li>
+              <li className='nav-page active' onClick={(e) => handleClassClick(e)}>WELCOME</li>
+              <li className='nav-page' onClick={(e) => handleClassClick(e)}>LISTINGS</li>
+              <li className='nav-page' onClick={(e) => handleClassClick(e)}>HIGHLIGHTS</li>
+              <li className='nav-page' onClick={(e) => handleClassClick(e)}>ABOUT</li>
+              <li className='nav-page' onClick={(e) => handleClassClick(e)}>CONNECT</li>
             </ul>
             <div className={scrollerClass}></div>
           </div>
         </div>
-        <div className='socials'>
+        <div className={socialClass}>
           <ul>
             <li>
               <a

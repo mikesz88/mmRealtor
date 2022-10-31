@@ -1,10 +1,10 @@
-import { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./Listings.css";
 
 const images = ["img1", "img2", "img3", "img4", "img5"];
 const delay = 5000;
 
-function Listings() {
+const Listings = React.forwardRef((props, ref) => {
   const [index, setIndex] = useState(0);
   const timeoutRef = useRef(null);
 
@@ -30,7 +30,7 @@ function Listings() {
   }, [index]);
 
   return (
-    <div className='listings-home component'>
+    <div id="component" className='listings next' ref={ref}>
       <div className='slideshow-container'>
         <div className='listing-slides'>
           <div className={`slide ${images[index]}`}>
@@ -46,6 +46,6 @@ function Listings() {
       </div>
     </div>
   );
-}
+})
 
 export default Listings;

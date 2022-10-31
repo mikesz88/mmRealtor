@@ -1,5 +1,6 @@
-.listings-home {
+.listings {
   height: 100%;
+  transition: all 0.3s ease-out;
 }
 
 .slideshow-container {

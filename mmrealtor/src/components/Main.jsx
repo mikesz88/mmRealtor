@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useRef, useState} from "react";
 import './Main.css'
 import Nav from "./Nav/Nav";
 import Welcome from "./Welcome/Welcome";
@@ -7,46 +7,63 @@ import Highlights from "./Highlights/Highlights";
 import About from "./About/About";
 import Connect from "./Connect/Connect";
 
-const checkoutRoutes = [
-  "Welcome",
-  "Listings",
-  "Highlights",
-  "About",
-  "Connect",
-];
+export default function Main() {
+  const [routeIndex, setRouteIndex] = useState(0);
 
-class Main extends React.Component {
-  state = {
-    routeIndex: 0,
-  }
+  const page1 = useRef(null);
+  const page2 = useRef(null);
+  const page3 = useRef(null);
+  const page4 = useRef(null);
+  const page5 = useRef(null);
 
-  changeRoute = (index) => {
-    this.setState({ routeIndex: index }) 
+  const pages = [page1, page2, page3, page4, page5]
+  
+  let active = 0;
+  let next = active < pages.length - 1 ? active + 1 : 0 ;
+  let prev = active > 0 ? active - 1 : pages.length - 1 ;
+
+  const update = () => {
+    console.log(pages);
+    pages.forEach((page) => {
+      page.current.classList.remove('active', 'prev', 'next');
+    })
+    pages[active].current.classList.add('active');
+    pages[prev].current.classList.add('prev');
+    pages[next].current.classList.add('next');
   };
 
-  render() {
-    const checkoutRoute = checkoutRoutes[this.state.routeIndex];
-    return (
-      <div className='main' ref={this.myRef} onScroll={() => console.log('your mom')}>
-        <Nav changeRoute={this.changeRoute} />
-        {checkoutRoute === "Welcome" && 
-          <Welcome changeRoute={this.changeRoute} />}
-        {checkoutRoute === "Listings" && 
-          <Listings changeRoute={this.changeRoute} />}
-        {checkoutRoute === "Highlights" && 
-          <Highlights changeRoute={this.changeRoute} />}
-        {checkoutRoute === "About" && 
-          <About changeRoute={this.changeRoute} />}
-        {checkoutRoute === "Connect" && 
-          <Connect changeRoute={this.changeRoute} />}
-          {/* <Welcome/>
-          <Listings/>
-          <Highlights/>
-          <About />
-          <Connect/> */}
-      </div>
-    );
-  }
-}
+  const goToNum = (number) => {
+    active = number;
+    next = active < pages.length - 1 ? active + 1 : 0 ;
+    prev = active > 0 ? active - 1 : pages.length - 1 ;
+    update();
+    setRouteIndex(active)
+  };
 
-export default Main;
+  const goToPrev = () => {
+    active > 0 ? goToNum(active - 1) : goToNum(active.length - 1);
+  }
+
+  const goToNext = () => {
+    active < pages.length - 1 ? goToNum(active + 1) : goToNum(0);
+  }
+
+  const changeRoute = (index) => {
+    goToNum(index)
+  };
+
+  const handleScroll = (event) => {
+    event.currentTarget.scrollTop > 0 ? goToNext() : goToPrev()
+  }
+  
+  return (
+    <div className='main' onScroll={(e) => handleScroll(e)}>
+      <Nav changeRoute={changeRoute} index={routeIndex}/>
+      <Welcome ref={page1}/>
+      <Listings ref={page2}/>
+      <Highlights ref={page3}/>
+      <About ref={page4}/>
+      <Connect ref={page5}/>
+    </div>
+  );
+}

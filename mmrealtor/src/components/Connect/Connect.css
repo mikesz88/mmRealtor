@@ -32,7 +32,8 @@
 .connect-content {
   position: absolute;
   top: 55%;
-  left: 25%;
+  left: 0;
+  right: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,11 +74,13 @@
   border: none;
   border-bottom: 1px solid white;
   resize: none;
+  color: white;
+  font-family: "Barlow", sans-serif;
 }
 
 .connect-input input:focus,
 .connect-input textarea:focus {
-  outline: none;
+  outline: none;    
 }
 
 .connect-input textarea { width: 300px;}
@@ -91,4 +94,58 @@
   padding: 15px 20px;
   font-weight: 600;
   letter-spacing: .5px;
+}
+
+.brokerage {
+  position: absolute;
+  top: 90%;
+  left: 10%;
+  width: 20%;
+}
+
+.brokerage img {
+  width: 100%;
+}
+
+@media screen and (max-width: 990px) {
+  #component.connect.active{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    height: 100%;
+  }
+
+  .connect-title {
+    position: inherit;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .connect-title h2:nth-child(2) {
+    padding: 0;
+  }
+
+  .connect-content {
+    position: absolute;
+    top: 56%;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+
+  .a-list p { padding: 10px 50px 20px; }
+
+  .connect-content form {
+    flex-direction: column;
+  }
+
+  .connect-input input { 
+   margin: 10px 0; 
+   height: 30px;
+  }
+  .connect-input textarea {
+    height: 40px;
+  }
+
+  .brokerage { display: none; }
 }
