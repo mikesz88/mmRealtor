@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/mmRealtor/static/css/main.1bd2d3bb.css",
+    "main.js": "/mmRealtor/static/js/main.bd819749.js",
+    "static/js/787.07498ed6.chunk.js": "/mmRealtor/static/js/787.07498ed6.chunk.js",
+    "static/media/the-wealth-report-2019.pdf": "/mmRealtor/static/media/the-wealth-report-2019.c58da5993ddc096f628f.pdf",
+    "static/media/slideshow-1.jpg": "/mmRealtor/static/media/slideshow-1.f9a51af09daaa334a0da.jpg",
+    "static/media/connect-bg.jpg": "/mmRealtor/static/media/connect-bg.af0e2af2f9103a02459b.jpg",
+    "static/media/listing-04.jpg": "/mmRealtor/static/media/listing-04.380636407da2c409f021.jpg",
+    "static/media/listing-05.jpg": "/mmRealtor/static/media/listing-05.5b02f0ee7eea3964c9b5.jpg",
+    "static/media/listing-01.jpg": "/mmRealtor/static/media/listing-01.bf2341f97af0988e97d1.jpg",
+    "static/media/listing-02.jpg": "/mmRealtor/static/media/listing-02.9bf5b16396e221271fe5.jpg",
+    "static/media/listing-03.jpg": "/mmRealtor/static/media/listing-03.10576ee01cbb517bd2aa.jpg",
+    "static/media/video-thumb.jpg": "/mmRealtor/static/media/video-thumb.af00ad46a6258fe1b01e.jpg",
+    "static/media/intro-photo.jpg": "/mmRealtor/static/media/intro-photo.5b2d7795a7c41fe9add1.jpg",
+    "static/media/glasses.jpg": "/mmRealtor/static/media/glasses.95f08abf8ffe64214893.jpg",
+    "static/media/elliman-report.pdf": "/mmRealtor/static/media/elliman-report.ec2914ab2758d7ccc3c8.pdf",
+    "static/media/couch.jpg": "/mmRealtor/static/media/couch.56cec93fd6543f26f857.jpg",
+    "static/media/room.jpg": "/mmRealtor/static/media/room.baa1d43dd106db213bc7.jpg",
+    "static/media/about-bg.jpg": "/mmRealtor/static/media/about-bg.dbcf14770603f00dadeb.jpg",
+    "static/media/press1.jpg": "/mmRealtor/static/media/press1.e8de37b35c9d6926d806.jpg",
+    "static/media/press2.jpg": "/mmRealtor/static/media/press2.521f83dbfe98cceb1c81.jpg",
+    "static/media/logo-dark.png": "/mmRealtor/static/media/logo-dark.dbe58006c0ec68e245a0.png",
+    "static/media/play-btn.png": "/mmRealtor/static/media/play-btn.79575957e77c43b7ab0a.png",
+    "static/media/broker-logo.webp": "/mmRealtor/static/media/broker-logo.c370b9492c2467f17b85.webp",
+    "index.html": "/mmRealtor/index.html",
+    "main.1bd2d3bb.css.map": "/mmRealtor/static/css/main.1bd2d3bb.css.map",
+    "main.bd819749.js.map": "/mmRealtor/static/js/main.bd819749.js.map",
+    "787.07498ed6.chunk.js.map": "/mmRealtor/static/js/787.07498ed6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1bd2d3bb.css",
+    "static/js/main.bd819749.js"
+  ]
+}
