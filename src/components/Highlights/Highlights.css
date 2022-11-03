@@ -107,6 +107,7 @@
 }
 
 .highlights .glasses-wrapper img {
+  object-position: top;
   margin-bottom: -4px;
   filter: grayscale(40%);
   opacity: 0.8;
@@ -188,7 +189,7 @@
 .press-media a:nth-child(1) {
   position: inherit;
   width: 45%;
-  filter: grayscale(30%);
+  filter: grayscale(60%);
   opacity: 0.8;
   transition: all 0.3s ease-in-out;
 }

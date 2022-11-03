@@ -86,7 +86,7 @@ class Nav extends React.Component {
           <ul>
             <li>
               <a
-                href='http://instagram.com/alexandreanu'
+                href='https://www.instagram.com/hcc_realty_llc/'
                 target='_blank'
                 className='instagram'
                 rel='noreferrer'
@@ -96,15 +96,15 @@ class Nav extends React.Component {
             </li>
             <li>
               <a
-                href='https://twitter.com/LAPropertyBoss'
+                href='https://www.facebook.com/michael.martinez.9887117'
                 target='_blank'
-                className='twitter'
+                className='facebook'
                 rel='noreferrer'
               >
-                <span className='hidden'>twitter</span>
+                <span className='hidden'>facebook</span>
               </a>
             </li>
-            <li>
+            {/* <li>
               <a
                 href='https://www.youtube.com/channel/UCgF4ubclHpA87g8fZ_Zn2jw'
                 target='_blank'
@@ -113,10 +113,10 @@ class Nav extends React.Component {
               >
                 <span className='hidden'>youtube</span>
               </a>
-            </li>
+            </li> */}
             <li>
               <a
-                href='www.email.com'
+                href='mailto:michael@rhacommercial.com'
                 target='_blank'
                 className='email'
                 rel='noreferrer'
@@ -126,7 +126,7 @@ class Nav extends React.Component {
             </li>
             <li>
               <a
-                href='www.phone.com'
+                href='tel:2148821065'
                 target='_blank'
                 className='phone'
                 rel='noreferrer'

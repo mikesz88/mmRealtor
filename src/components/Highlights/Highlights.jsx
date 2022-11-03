@@ -4,12 +4,14 @@ import intro from '../../assets/intro-photo.jpg'
 import couch from '../../assets/couch.jpg'
 import glasses from '../../assets/glasses.jpg'
 import room from '../../assets/room.jpg'
-import media1 from '../../assets/video-thumb.jpg'
-import media2 from '../../assets/press1.jpg'
-import media3 from '../../assets/press2.jpg'
+import media1 from '../../assets/press-temp-2.jpg'
+import media2 from '../../assets/press-temp-1.jpg'
+import media3 from '../../assets/press-temp-3.jpg'
+// import media2 from '../../assets/press1.jpg'
+// import media3 from '../../assets/press2.jpg'
 import report1 from '../../assets/elliman-report.pdf'
 import report2 from '../../assets/the-wealth-report-2019.pdf'
-import play from '../../assets/play-btn.png'
+// import play from '../../assets/play-btn.png'
 
 const review = `“ My clients love me because I'm a winner. I bring comfort and clarity into an immensely competitive and demanding Dallas market. This allows for confident decisions, which in turn builds trust, relationships, and ultimately the best results. ”`
 
@@ -19,7 +21,7 @@ const Highlights = React.forwardRef((props, ref) => {
     <div id='component' className='highlights' ref={ref}>
       <div className="video-link">
         <a href="video.com">
-          <img className='play-btn' src={play} alt="Play Button" />
+          {/* <img className='play-btn' src={play} alt="Play Button" /> */}
           <img src={intro} alt="" />
         </a>
       </div>
@@ -40,12 +42,12 @@ const Highlights = React.forwardRef((props, ref) => {
       <div className='media-wrapper'>
         <h3>Media/Press</h3>
         <div className='press-media'>
-          <a href='www.video.com' >
-            <img className='play-btn' src={play} alt="Play Button" />
+          <a href={'$'} >
+            {/* <img className='play-btn' src={play} alt="Play Button" /> */}
             <img src={media1} alt="press video" />
           </a>
-          <a href={report1} ><img src={media2} alt="Elliman Q2 2019" /></a>
-          <a href={report2} ><img src={media3} alt="The Wealth Report" /></a>
+          <a href={'$'} ><img src={media2} alt="Elliman Q2 2019" /></a>
+          <a href={'$'} ><img src={media3} alt="The Wealth Report" /></a>
         </div>
       </div>
     </div>
