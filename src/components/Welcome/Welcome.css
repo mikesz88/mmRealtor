@@ -8,10 +8,18 @@
   transition: all 0.3s ease-out;
 }
 
-@media screen and (max-width: 990px) {
-  .welcome {
-    background-attachment: scroll;
-  }
+.name-header{
+  position: absolute;
+  top: 5%;
+  left: 15%;
+  width: 50%;
+}
+
+.name-header h1 {
+  color: white;
+  font-family: "Barlow", sans-serif;
+  font-weight: 200;
+  font-size: 45px;
 }
 
 .brokerage {
@@ -23,4 +31,28 @@
 
 .brokerage img {
   width: 100%;
+}
+
+@media screen and (max-width: 990px) {
+  .welcome {
+    background-attachment: scroll;
+  }
+  .name-header {
+    top: 18%;
+    width: 60%;
+    left: 0;
+    right: none;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  
+  .name-header {
+    top: 90%;
+    width: 80%;
+  }
+  .name-header h1 {
+    font-size: 20px;
+  }
 }

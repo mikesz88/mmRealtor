@@ -1,8 +1,8 @@
 import React from 'react'
-import './Connect.css'
+import './Contact.css'
 import brokerLogo from '../../assets/broker-logo.webp'
 
-const Connect = React.forwardRef((props, ref) => {
+const Contact = React.forwardRef((props, ref) => {
 
   return (
     <div id='component' className='connect prev' ref={ref} >
@@ -13,7 +13,7 @@ const Connect = React.forwardRef((props, ref) => {
       <div className='connect-content'>
         <div className='a-list'>
           <h3>The A-List</h3>
-          <p>The best new luxury listings and development opportunities in LA, handpicked by Alexandre, delivered to your inbox.</p>
+          <p>The best new luxury listings and development opportunities in Dallas, handpicked by Michael, delivered to your inbox.</p>
         </div>
         <form action='https://getform.io/f/b47dbf93-e859-451e-b499-03b454e6cd13' method='POST'>
           <div className='connect-input'>
@@ -38,4 +38,4 @@ const Connect = React.forwardRef((props, ref) => {
   );
 })
 
-export default Connect;
+export default Contact;

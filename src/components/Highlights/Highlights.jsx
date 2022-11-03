@@ -11,7 +11,7 @@ import report1 from '../../assets/elliman-report.pdf'
 import report2 from '../../assets/the-wealth-report-2019.pdf'
 import play from '../../assets/play-btn.png'
 
-const review = `“ My clients love me because I'm a winner. I bring comfort and clarity into an immensely competitive and demanding LA market. This allows for confident decisions, which in turn builds trust, relationships, and ultimately the best results. ”`
+const review = `“ My clients love me because I'm a winner. I bring comfort and clarity into an immensely competitive and demanding Dallas market. This allows for confident decisions, which in turn builds trust, relationships, and ultimately the best results. ”`
 
 const Highlights = React.forwardRef((props, ref) => {
 
@@ -24,7 +24,7 @@ const Highlights = React.forwardRef((props, ref) => {
         </a>
       </div>
       <div className='highlight-title'>
-        <h2>Anulifestyle</h2>
+        <h2>HCC Realty</h2>
         <h2>Highlights</h2>
       </div>
       <div className='couch-wrapper'>

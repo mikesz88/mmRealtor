@@ -5,7 +5,7 @@ import Welcome from "./Welcome/Welcome";
 import Listings from "./Listings/Listings";
 import Highlights from "./Highlights/Highlights";
 import About from "./About/About";
-import Connect from "./Connect/Connect";
+import Contact from "./Contact/Contact";
 
 export default function Main() {
   const [routeIndex, setRouteIndex] = useState(0);
@@ -63,7 +63,7 @@ export default function Main() {
       <Listings ref={page2}/>
       <Highlights ref={page3}/>
       <About ref={page4}/>
-      <Connect ref={page5}/>
+      <Contact ref={page5}/>
     </div>
   );
 }

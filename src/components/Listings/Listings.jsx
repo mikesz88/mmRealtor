@@ -38,7 +38,7 @@ const Listings = React.forwardRef((props, ref) => {
               <h2>Listings</h2>
               <h2>Portfolio</h2>
               <a href="www.portfolio.com" className='portfolio-btn'>
-                View Alexandre's Portfolio
+                View Michael's Portfolio
               </a>
             </div>
           </div>

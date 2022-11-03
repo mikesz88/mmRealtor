@@ -7,7 +7,7 @@ const checkoutRoutes = [
   "LISTINGS",
   "HIGHLIGHTS",
   "ABOUT",
-  "CONNECT",
+  "CONTACT",
 ];
 
 class Nav extends React.Component {
@@ -77,7 +77,7 @@ class Nav extends React.Component {
               <li className='nav-page' onClick={(e) => handleClassClick(e)}>LISTINGS</li>
               <li className='nav-page' onClick={(e) => handleClassClick(e)}>HIGHLIGHTS</li>
               <li className='nav-page' onClick={(e) => handleClassClick(e)}>ABOUT</li>
-              <li className='nav-page' onClick={(e) => handleClassClick(e)}>CONNECT</li>
+              <li className='nav-page' onClick={(e) => handleClassClick(e)}>CONTACT</li>
             </ul>
             <div className={scrollerClass}></div>
           </div>
