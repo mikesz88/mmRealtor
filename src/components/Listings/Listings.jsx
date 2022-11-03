@@ -37,8 +37,8 @@ const Listings = React.forwardRef((props, ref) => {
             <div className="portfolio-btn-wrapper">
               <h2>Listings</h2>
               <h2>Portfolio</h2>
-              <a href="www.portfolio.com" className='portfolio-btn'>
-                View Michael's Portfolio
+              <a href="$" className='portfolio-btn'>
+                Listings Coming Soon
               </a>
             </div>
           </div>
