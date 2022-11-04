@@ -5,7 +5,7 @@ import logo from "../../assets/logo-dark.png";
 const checkoutRoutes = [
   "WELCOME",
   "LISTINGS",
-  "HIGHLIGHTS",
+  "SERVICES",
   "ABOUT",
   "CONTACT",
 ];
@@ -75,7 +75,7 @@ class Nav extends React.Component {
             <ul className={hideNav}>
               <li className='nav-page active' onClick={(e) => handleClassClick(e)}>WELCOME</li>
               <li className='nav-page' onClick={(e) => handleClassClick(e)}>LISTINGS</li>
-              <li className='nav-page' onClick={(e) => handleClassClick(e)}>HIGHLIGHTS</li>
+              <li className='nav-page' onClick={(e) => handleClassClick(e)}>SERVICES</li>
               <li className='nav-page' onClick={(e) => handleClassClick(e)}>ABOUT</li>
               <li className='nav-page' onClick={(e) => handleClassClick(e)}>CONTACT</li>
             </ul>

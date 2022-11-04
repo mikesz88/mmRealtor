@@ -96,14 +96,14 @@
   letter-spacing: .5px;
 }
 
-.brokerage {
+.connect .brokerage {
   position: absolute;
   top: 90%;
   left: 10%;
   width: 20%;
 }
 
-.brokerage img {
+.connect .brokerage img {
   width: 100%;
 }
 
@@ -147,5 +147,5 @@
     height: 40px;
   }
 
-  .brokerage { display: none; }
+  /* .connect .brokerage { display: none; } */
 }

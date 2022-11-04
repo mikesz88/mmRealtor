@@ -10,22 +10,25 @@
 
 .name-header{
   position: absolute;
-  top: 5%;
-  left: 15%;
+  top: 50%;
+  left: 10%;
   width: 50%;
 }
 
 .name-header h1 {
   color: white;
   font-family: "Barlow", sans-serif;
-  font-weight: 200;
   font-size: 45px;
+  text-transform: uppercase;
 }
+
+.name-header h1:nth-child(1) { font-weight: 200; }
+.name-header h1:nth-child(2) { font-weight: 500; }
 
 .brokerage {
   position: absolute;
   top: 90%;
-  left: 10%;
+  left: 8%;
   width: 20%;
 }
 
@@ -37,12 +40,15 @@
   .welcome {
     background-attachment: scroll;
   }
-  .name-header {
-    top: 18%;
-    width: 60%;
-    left: 0;
-    right: none;
-    margin: 0;
+  .name-header { 
+    left: 5%; 
+    top: 55%;
+  }
+  .name-header h1 { font-size: 25px;}
+  .welcome .brokerage {
+    top: 90%;
+    left: 75%;
+    margin: auto;
   }
 }
 
@@ -54,5 +60,15 @@
   }
   .name-header h1 {
     font-size: 20px;
+  }
+  .welcome .brokerage {
+    top: 95%;
+  }
+}
+
+@media screen and (max-width: 1700px) and (max-height: 1450px) {
+  .name-header { 
+    top: 5%;
+    left: 15%;
   }
 }

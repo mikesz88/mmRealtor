@@ -8,12 +8,12 @@ const Contact = React.forwardRef((props, ref) => {
     <div id='component' className='connect prev' ref={ref} >
       <div className="connect-title">
         <h2>Connect</h2>
-        <h2>With Us</h2>
+        <h2>With Me</h2>
       </div>
       <div className='connect-content'>
         <div className='a-list'>
-          <h3>The A-List</h3>
-          <p>The best new luxury listings and development opportunities in Dallas, handpicked by Michael, delivered to your inbox.</p>
+          <h3>Join The A-List</h3>
+          <p>For your residential and commercial real estate needs or if you would simply like to learn more about my services. I look forward to speaking with you.</p>
         </div>
         <form action='https://getform.io/f/b47dbf93-e859-451e-b499-03b454e6cd13' method='POST'>
           <div className='connect-input'>

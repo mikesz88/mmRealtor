@@ -1,8 +1,8 @@
 import React, { useRef } from 'react'
 import './About.css'
 
-const paragraph1 = 'I am a Power Agent. Every move I make is to win the deal for my clients. I pride myself in providing the the smoothest real estate experience possible, with the absolute best results, no excuses. I am a Price Expert with the ability to walk into any home or property and know its true value. My high-level negotiating skills, marketing strategies, and solid business fundamentals raise the bar for professionalism in the industry, which has led to multiple sales records in Dallas and Texas-wide.'
-const paragraph2 = 'As a veteran of the United States Marine Corps, and my hustle is only outshined by my passion for doing what I love. I cover all of Texas and the Dallas/Fort Worth Luxury Market. I proudly represent some of the most significant homes and people in the world. My relationships are everything, and my dedication to my clients unparalleled.'
+const paragraph1 = 'I am a Power Agent. Every move I make is to win the deal for my clients. I pride myself in providing the the smoothest real estate experience possible, with the absolute best results, no excuses. I am a Price Expert with the ability to walk into any home or property and know its true value. My high-level negotiating skills, marketing strategies, and solid business fundamentals raise the bar for professionalism in the industry.'
+const paragraph2 = 'As a Veteran of the United States Marine Corps, I take great pride in providing my clients with these three main characteristics: Honor, Courage, and Commitment! My hustle is only outshined by my passion for doing what I love. I cover all of Texas and the Dallas/Fort Worth residential and commercial markets. My dedication to my clients unparalleled.'
 
 const About = React.forwardRef((props, ref) => {
   const slide1 = useRef(null);
@@ -44,11 +44,11 @@ const About = React.forwardRef((props, ref) => {
         </div>
         <div className='testimonial-wrapper'>
           <div className='testimonial active' ref={slide1}>
-            <p>"The bar has been raised for service and results in the Michael luxury real estate business. Michael is on a different level!"</p>
-            <p>- David M.</p>
+            <p>"My business had last-minute demands that only Michael could have handled. Our success is thanks to him."</p>
+            <p>- Steve B.</p>
           </div>
           <div className='testimonial next' ref={slide2}>
-            <p>"I've closed over 50 real estate transactions and my buying experience with Michael was the most enjoyable by a wide margin."</p>
+            <p>"I've closed over 50 real estate deals and my buying experience with Michael was the most enjoyable by a wide margin."</p>
             <p>- Robert H.</p>
           </div>
           <div className='testimonial prev' ref={slide3}>
@@ -59,7 +59,7 @@ const About = React.forwardRef((props, ref) => {
         </div>
       </div>
       <div className='about-bottom'>
-        <h3>Real Estate, Real Smooth</h3>
+        <h3>Client Focused. Results Driven.</h3>
         <p>{paragraph1}</p>
         <p>{paragraph2}</p>
       </div>

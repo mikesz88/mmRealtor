@@ -3,7 +3,7 @@ import './Main.css'
 import Nav from "./Nav/Nav";
 import Welcome from "./Welcome/Welcome";
 import Listings from "./Listings/Listings";
-import Highlights from "./Highlights/Highlights";
+import Services from "./Services/Services";
 import About from "./About/About";
 import Contact from "./Contact/Contact";
 
@@ -61,7 +61,7 @@ export default function Main() {
       <Nav changeRoute={changeRoute} index={routeIndex}/>
       <Welcome ref={page1}/>
       <Listings ref={page2}/>
-      <Highlights ref={page3}/>
+      <Services ref={page3}/>
       <About ref={page4}/>
       <Contact ref={page5}/>
     </div>
