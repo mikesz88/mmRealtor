@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mmRealtor/static/css/main.6c9e3382.css",
-    "main.js": "/mmRealtor/static/js/main.9de4d11c.js",
+    "main.js": "/mmRealtor/static/js/main.df910242.js",
     "static/js/787.07498ed6.chunk.js": "/mmRealtor/static/js/787.07498ed6.chunk.js",
     "static/media/the-wealth-report-2019.pdf": "/mmRealtor/static/media/the-wealth-report-2019.c58da5993ddc096f628f.pdf",
     "static/media/listing-02.jpg": "/mmRealtor/static/media/listing-02.db3bdbb11a0dbc818315.jpg",
@@ -25,11 +25,11 @@
     "static/media/ig-logo.png": "/mmRealtor/static/media/ig-logo.b5a583bd4aacc23eaca8.png",
     "index.html": "/mmRealtor/index.html",
     "main.6c9e3382.css.map": "/mmRealtor/static/css/main.6c9e3382.css.map",
-    "main.9de4d11c.js.map": "/mmRealtor/static/js/main.9de4d11c.js.map",
+    "main.df910242.js.map": "/mmRealtor/static/js/main.df910242.js.map",
     "787.07498ed6.chunk.js.map": "/mmRealtor/static/js/787.07498ed6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6c9e3382.css",
-    "static/js/main.9de4d11c.js"
+    "static/js/main.df910242.js"
   ]
 }
