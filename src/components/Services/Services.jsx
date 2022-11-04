@@ -28,6 +28,10 @@ const Services = React.forwardRef((props, ref) => {
       <div className='service-title'>
         <h2>HCC Realty</h2>
         <h2>Services</h2>
+        <p>Buy | Sell | Lease - <br></br>
+          Buyer and Seller Representation<br></br><br></br>
+          Residential - single family homes, land<br></br><br></br>
+          Commercial - warehouse, office, retail, restaurant, land, multi-family</p>
       </div>
       <div className='couch-wrapper'>
         <img src={couch} alt="couch" />
@@ -40,7 +44,6 @@ const Services = React.forwardRef((props, ref) => {
         <img src={room} alt="Luxury Living Room" />
       </div>
       <div className='media-wrapper'>
-        <h3>Buy | Sell | Lease - <br></br>Residential or Commercial</h3>
         <div className='press-media'>
           <a href={'$'} >
             {/* <img className='play-btn' src={play} alt="Play Button" /> */}

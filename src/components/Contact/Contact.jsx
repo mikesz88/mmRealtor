@@ -13,7 +13,7 @@ const Contact = React.forwardRef((props, ref) => {
       <div className='connect-content'>
         <div className='a-list'>
           <h3>Join The A-List</h3>
-          <p>For your residential and commercial real estate needs or if you would simply like to learn more about my services. I look forward to speaking with you.</p>
+          <p>For your residential and commercial real estate needs or if you would simply like to learn more about my services.<br></br>I look forward to speaking with you.</p>
         </div>
         <form action='https://getform.io/f/b47dbf93-e859-451e-b499-03b454e6cd13' method='POST'>
           <div className='connect-input'>

@@ -41,6 +41,7 @@
 
 .a-list {
   text-align: center;
+  max-width: 80%;
 }
 
 .a-list h3 {
@@ -147,5 +148,5 @@
     height: 40px;
   }
 
-  /* .connect .brokerage { display: none; } */
+  .connect .brokerage { left: 5%; } 
 }

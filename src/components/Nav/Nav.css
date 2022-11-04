@@ -233,15 +233,16 @@ a.phone {
 
 @media screen and (max-width: 990px) {
   .nav {
-    height: 15%;
+    height: 100%;
     width: 100%;
     background: rgb(69, 69, 69);
     display: block;
-    position: fixed;
+    position: sticky;
   }
   .main-logo {
     margin: 0 auto;
     height: 100%;
+    width: 100px;
   }
   .main-logo img {
     height: 100%;
@@ -269,7 +270,6 @@ a.phone {
   .scroll-navigation { padding: 0; }
   .socials {
     top: 20%;
-    position: fixed;
   }
 }
 

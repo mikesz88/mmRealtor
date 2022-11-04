@@ -85,11 +85,19 @@
 
 .service-title h2:nth-child(1) {
   font-weight: 100;
+  padding: 20px 8px 0;
 }
 
 .service-title h2:nth-child(2) {
   font-weight: 400;
   padding-left: 60px;
+  padding-bottom: 20px;
+}
+
+.service-title p {
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 10px;
 }
 
 .couch-wrapper {
@@ -306,6 +314,12 @@ fadeInRight {
     z-index: 1;
     position: inherit; 
     padding: 80px 0;
+    font-size: 25px;
+  }
+
+  .service-title p {
+    text-align: center;
+    margin: auto;
   }
 
   .services .couch-wrapper { height: 50%; }
@@ -319,7 +333,7 @@ fadeInRight {
     z-index: 1;
   }
   .services .review-wrapper > p { 
-    padding: 40px 20px;
+    padding: 10px 20px;
     font-size: 24px;
   }
   .services .review-wrapper > img { 
@@ -327,6 +341,12 @@ fadeInRight {
   }
 
   .press-media { margin: 80px auto; }
+}
+
+@media screen and (max-width: 600px) {
+  .services .review-wrapper > p { 
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -370,5 +390,11 @@ fadeInRight {
     margin: auto;
     height: 60px;
     width: 60px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .services .review-wrapper > p { 
+    font-size: 12px;
   }
 }
