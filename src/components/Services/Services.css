@@ -1,4 +1,4 @@
-#component.services.active{
+#component.services.active {
   height: 100%;
   width: 100%;
   background-color: black;
@@ -29,7 +29,7 @@
   animation: fadeInRight 1s both;
 }
 
-.video-link a{
+.video-link a {
   width: 100%;
   height: 100%;
 }
@@ -68,7 +68,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: end;
+  align-items: flex-end;
   margin: 0;
   padding: 0;
   font-size: 30px;
@@ -105,7 +105,7 @@
   animation: fadeInLeft 1s both;
 }
 
-.couch-wrapper img { 
+.couch-wrapper img {
   z-index: 10;
 }
 
@@ -231,11 +231,11 @@ fadeInBottom {
 @keyframes fadeInBottom {
   0% {
     opacity: 0;
-    transform: translate3d(0,100%,0);
+    transform: translate3d(0, 100%, 0);
   }
   100% {
-      opacity: 1;
-      transform: none;
+    opacity: 1;
+    transform: none;
   }
 }
 
@@ -248,11 +248,11 @@ fadeInLeft {
 @keyframes fadeInLeft {
   0% {
     opacity: 0;
-    transform: translate3d(100%,0,0);
+    transform: translate3d(100%, 0, 0);
   }
   100% {
-      opacity: 1;
-      transform: none;
+    opacity: 1;
+    transform: none;
   }
 }
 
@@ -265,11 +265,11 @@ fadeInTop {
 @keyframes fadeInTop {
   0% {
     opacity: 0;
-    transform: translate3d(0,-100%,0);
+    transform: translate3d(0, -100%, 0);
   }
   100% {
-      opacity: 1;
-      transform: none;
+    opacity: 1;
+    transform: none;
   }
 }
 
@@ -282,38 +282,37 @@ fadeInRight {
 @keyframes fadeInRight {
   0% {
     opacity: 0;
-    transform: translate3d(-100%,0,0);
+    transform: translate3d(-100%, 0, 0);
   }
   100% {
-      opacity: 1;
-      transform: none;
+    opacity: 1;
+    transform: none;
   }
 }
 
 @media screen and (max-width: 990px) {
   .video-link,
   .service-title,
-  .couch-wrapper, 
+  .couch-wrapper,
   .glasses-wrapper,
   .review-wrapper,
-  .media-wrapper, 
-  .press-media a
-   {
+  .media-wrapper,
+  .press-media a {
     animation: none;
   }
   #component.services.active {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
   }
 
   .services > div {
     height: 100%;
   }
 
-  .services .service-title { 
+  .services .service-title {
     z-index: 1;
-    position: inherit; 
+    position: inherit;
     padding: 80px 0;
     font-size: 25px;
   }
@@ -323,29 +322,37 @@ fadeInRight {
     margin: auto;
   }
 
-  .services .couch-wrapper { height: 50%; }
-  .services .couch-wrapper img { object-position: top; }
+  .services .couch-wrapper {
+    height: 50%;
+  }
+  .services .couch-wrapper img {
+    object-position: top;
+  }
 
-  .glasses-wrapper { display: none; }
+  .glasses-wrapper {
+    display: none;
+  }
 
-  .services .review-wrapper { 
-    justify-content: space-between; 
+  .services .review-wrapper {
+    justify-content: space-between;
     height: 40%;
     z-index: 1;
   }
-  .services .review-wrapper > p { 
+  .services .review-wrapper > p {
     padding: 10px 20px;
     font-size: 24px;
   }
-  .services .review-wrapper > img { 
+  .services .review-wrapper > img {
     height: 60%;
   }
 
-  .press-media { margin: 80px auto; }
+  .press-media {
+    margin: 80px auto;
+  }
 }
 
 @media screen and (max-width: 600px) {
-  .services .review-wrapper > p { 
+  .services .review-wrapper > p {
     font-size: 16px;
   }
 }
@@ -361,7 +368,7 @@ fadeInRight {
     height: 80px;
     filter: invert(100%);
   }
-  .services .review-wrapper > p { 
+  .services .review-wrapper > p {
     padding: 10px 10px;
     font-size: 14px;
   }
@@ -374,7 +381,7 @@ fadeInRight {
     margin: 30px;
     font-size: 20px;
   }
-  .press-media { 
+  .press-media {
     flex-direction: column;
     gap: 20px;
     align-items: center;
@@ -383,7 +390,9 @@ fadeInRight {
   .press-media a {
     width: 50%;
   }
-  .press-media a:nth-child(1) { width: 80%; }
+  .press-media a:nth-child(1) {
+    width: 80%;
+  }
   .press-media a .play-btn {
     top: 25%;
     left: 0;
@@ -395,7 +404,7 @@ fadeInRight {
 }
 
 @media screen and (max-width: 350px) {
-  .services .review-wrapper > p { 
+  .services .review-wrapper > p {
     font-size: 12px;
   }
 }
