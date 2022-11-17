@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/mmRealtor/static/css/main.581f2f70.css",
+    "main.css": "/mmRealtor/static/css/main.a9fbb205.css",
     "main.js": "/mmRealtor/static/js/main.27ea3f49.js",
     "static/js/787.07498ed6.chunk.js": "/mmRealtor/static/js/787.07498ed6.chunk.js",
     "static/media/press-temp-4.jpg": "/mmRealtor/static/media/press-temp-4.3653249bc6f8e1628557.jpg",
@@ -22,12 +22,12 @@
     "static/media/broker-logo.webp": "/mmRealtor/static/media/broker-logo.c370b9492c2467f17b85.webp",
     "static/media/ig-logo.png": "/mmRealtor/static/media/ig-logo.b5a583bd4aacc23eaca8.png",
     "index.html": "/mmRealtor/index.html",
-    "main.581f2f70.css.map": "/mmRealtor/static/css/main.581f2f70.css.map",
+    "main.a9fbb205.css.map": "/mmRealtor/static/css/main.a9fbb205.css.map",
     "main.27ea3f49.js.map": "/mmRealtor/static/js/main.27ea3f49.js.map",
     "787.07498ed6.chunk.js.map": "/mmRealtor/static/js/787.07498ed6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.581f2f70.css",
+    "static/css/main.a9fbb205.css",
     "static/js/main.27ea3f49.js"
   ]
 }
