@@ -40,4 +40,15 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <script>
+    grecaptcha.ready(function () {
+      grecaptcha
+        .execute('6LfoDhUjAAAAAPyNGG50uVsVCUoNBowrgC6COP6h', {
+          action: 'contact',
+        })
+        .then(function (token) {
+          document.getElementById('captchaResponse').value = token;
+        });
+    });
+  </script>
 </html>

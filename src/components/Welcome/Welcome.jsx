@@ -12,6 +12,11 @@ const Welcome = React.forwardRef((props, ref) => {
       <div className='brokerage'>
         <img src={brokerLogo} alt="Brokerage" />
       </div>
+      <div className="trecContainer">
+        <span>
+          <a className="trecColor"  href="https://www.rogershealy.com/TREC_Consumer_Protection_Notice" target="_blank" rel="noopener noreferrer">TREC Consumer Protection Notice</a></span>
+        <span><a className="trecColor" href="https://www.rogershealy.com/TREC_Information_About_Brokerage_Services" target="_blank" rel="noopener noreferrer">TREC Information About Brokerage Services</a></span>
+      </div>
     </div>
   );
 });

@@ -1,5 +1,5 @@
 .welcome {
-  background-image: url("../../assets/slideshow-1.jpg");
+  background-image: url('../../assets/slideshow-1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -8,7 +8,7 @@
   transition: all 0.3s ease-out;
 }
 
-.name-header{
+.name-header {
   position: absolute;
   top: 50%;
   left: 10%;
@@ -17,13 +17,17 @@
 
 .name-header h1 {
   color: white;
-  font-family: "Barlow", sans-serif;
+  font-family: 'Barlow', sans-serif;
   font-size: 45px;
   text-transform: uppercase;
 }
 
-.name-header h1:nth-child(1) { font-weight: 200; }
-.name-header h1:nth-child(2) { font-weight: 500; }
+.name-header h1:nth-child(1) {
+  font-weight: 200;
+}
+.name-header h1:nth-child(2) {
+  font-weight: 500;
+}
 
 .brokerage {
   position: absolute;
@@ -36,8 +40,23 @@
   width: 100%;
 }
 
+.trecContainer {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: wrap;
+}
+
+.trecColor {
+  color: white;
+}
+
 @media screen and (max-width: 1700px) and (max-height: 1450px) {
-  .name-header { 
+  .name-header {
     top: 5%;
     left: 15%;
   }
@@ -47,11 +66,13 @@
   .welcome {
     background-attachment: scroll;
   }
-  .name-header { 
-    left: 5%; 
+  .name-header {
+    left: 5%;
     top: 55%;
   }
-  .name-header h1 { font-size: 25px;}
+  .name-header h1 {
+    font-size: 25px;
+  }
   .welcome .brokerage {
     top: 90%;
     left: 75%;
@@ -60,15 +81,13 @@
 }
 
 @media screen and (max-width: 420px) {
-  
   .name-header {
-    top: 90%;
-    width: 100%;
+    top: 85%;
   }
   .name-header h1 {
     font-size: 20px;
   }
   .welcome .brokerage {
-    top: 95%;
+    top: 90%;
   }
 }
