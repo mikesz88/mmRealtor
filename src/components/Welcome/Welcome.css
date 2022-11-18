@@ -42,7 +42,7 @@
 
 .trecContainer {
   position: absolute;
-  bottom: 10px;
+  bottom: 1rem;
   left: 0;
   right: 0;
   display: flex;
@@ -68,7 +68,7 @@
   }
   .name-header {
     left: 5%;
-    top: 55%;
+    top: 60%;
   }
   .name-header h1 {
     font-size: 25px;
@@ -82,7 +82,7 @@
 
 @media screen and (max-width: 420px) {
   .name-header {
-    top: 85%;
+    top: 64%;
   }
   .name-header h1 {
     font-size: 20px;
