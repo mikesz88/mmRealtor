@@ -289,7 +289,6 @@ fadeInRight {
 }
 
 @media screen and (max-width: 1024px) {
-
   .review-wrapper > p {
     font-size: 11px;
   }
