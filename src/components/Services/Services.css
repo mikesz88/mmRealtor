@@ -1,5 +1,5 @@
 #component.services.active {
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background-color: black;
   display: grid;
@@ -129,18 +129,16 @@
   justify-content: space-between;
   z-index: 10;
   animation: fadeInBottom 1s both;
-  min-height: 400px;
 }
 
 .review-wrapper > p {
   height: 40%;
-  padding: 20px;
-  padding-top: 60px;
+  padding: 10px;
   font-style: italic;
   word-spacing: 1.5px;
   text-align: center;
-  line-height: 25px;
-  font-size: 16px;
+  line-height: 22px;
+  font-size: 22px;
   margin: 0;
 }
 
@@ -287,6 +285,13 @@ fadeInRight {
   100% {
     opacity: 1;
     transform: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .review-wrapper > p {
+    font-size: 11px;
   }
 }
 
