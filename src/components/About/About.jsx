@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import './About.css'
 
 const paragraph1 = 'I am a Power Agent. Every move I make is to win the deal for my clients. I pride myself in providing the the smoothest real estate experience possible, with the absolute best results, no excuses. I am a Price Expert with the ability to walk into any home or property and know its true value. My high-level negotiating skills, marketing strategies, and solid business fundamentals raise the bar for professionalism in the industry.'
-const paragraph2 = 'As a Veteran of the United States Marine Corps, I take great pride in providing my clients with these three main characteristics: Honor, Courage, and Commitment! My hustle is only outshined by my passion for doing what I love. I cover all of Texas and the Dallas/Fort Worth residential and commercial markets. My dedication to my clients is unparalleled.'
+const paragraph2 = 'As a Veteran of the United States Marine Corps, I take great pride in providing my clients with these three main characteristics: Honor, Courage, and Commitment! My hustle is only outshined by my passion for doing what I love. I cover all of Texas and the Dallas/Fort Worth commercial markets. My dedication to my clients is unparalleled.'
 
 const About = React.forwardRef((props, ref) => {
   const slide1 = useRef(null);

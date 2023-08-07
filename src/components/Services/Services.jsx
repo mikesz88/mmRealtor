@@ -30,7 +30,6 @@ const Services = React.forwardRef((props, ref) => {
         <h2>Services</h2>
         <p>Buy | Sell | Lease - <br></br>
           Buyer and Seller Representation<br></br><br></br>
-          Residential - single family homes, land<br></br><br></br>
           Commercial - warehouse, office, retail, restaurant, land, multi-family</p>
       </div>
       <div className='couch-wrapper'>
