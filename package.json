@@ -15,7 +15,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "node -r ./polyfills/crypto.js ./node_modules/.bin/react-scripts build",
+    "build": "NODE_OPTIONS='--require=./polyfills/crypto.js' react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
